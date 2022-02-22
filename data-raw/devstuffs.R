@@ -14,7 +14,12 @@ my_desc$set_authors(c(
     role = c("aut", "cre"),
     email = "jonathan.mang@uk-erlangen.de",
     comment = c(ORCID = "0000-0003-0518-4710")
-  )
+  ),
+  person(
+    "MIRACUM - Medical Informatics in Research and Care in University Medicine",
+    role = c("fnd")
+  ),
+  person("Universitätsklinikum Erlangen, Germany", role = "cph")
 ))
 
 # Remove some author fields
