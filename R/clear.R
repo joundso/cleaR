@@ -1,4 +1,4 @@
-# cleaR - Utilities for 'DIZ' R Package Development
+# cleaR - Utility for 'DIZ' R Package Development
 # Copyright (C) 2020-2022 Universitätsklinikum Erlangen, Germany
 #
 # This program is free software: you can redistribute it and/or modify
@@ -30,7 +30,7 @@
 #'
 clear <- function(keep_environment = FALSE,
                   keep_console = FALSE) {
-  ## Inspiration: https://stackoverflow.com/questions/62901476
+  ## Inspiration: \url{https://stackoverflow.com/questions/62901476}
   gctorture(TRUE)
   if (!keep_console) {
     ## Cleanup the backend in RStudio:
