@@ -21,7 +21,7 @@ my_desc$set_authors(c(
 my_desc$del("Maintainer")
 my_desc$del("LazyData")
 # Set the version
-my_desc$set_version("0.0.0-9001")
+my_desc$set_version("0.0.0-9002")
 # The title of your package
 my_desc$set(Title = "Clear the R console and environment")
 # The description of your package
@@ -90,8 +90,8 @@ usethis::use_package("R", min_version = "3.1.0", type = "Depends")
 
 
 # Suggests
-# usethis::use_package("testthat", type = "Suggests")
-# usethis::use_package("lintr", type = "Suggests")
+usethis::use_package("testthat", type = "Suggests")
+usethis::use_package("lintr", type = "Suggests")
 # usethis::use_package("shiny", type = "Suggests")
 # usethis::use_package("shinyjs", type = "Suggests")
 
