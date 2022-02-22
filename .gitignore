@@ -1,0 +1,30 @@
+## --------------
+## This file is auto generated.
+## Please apply changes in `./data-raw/devstuffs.R`!
+## -------------
+/*
+/*/
+*.log
+!/.gitignore
+!/.Rbuildignore
+!/.gitlab-ci.yml
+!/data-raw/
+!/DESCRIPTION
+!/inst/
+!/LICENSE.md
+!/man/
+!NAMESPACE
+!/R/
+!/README.md
+!/tests/
+/.Rhistory
+!/*.Rproj
+/.Rproj*
+/.RData
+/.vscode
+!/.lintr
+!/tic.R
+!/.github/
+!/NEWS.md
+!/cran-comments.md
+.Rproj.user
