@@ -28,7 +28,7 @@ my_desc$del("LazyData")
 # Set the version
 my_desc$set_version("0.0.1")
 # The title of your package
-my_desc$set(Title = "Clear the R console and environment")
+my_desc$set(Title = "Clean the R Console and Environment")
 # The description of your package
 my_desc$set(
   Description = paste0(
