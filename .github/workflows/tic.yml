@@ -64,7 +64,7 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@master
         if: matrix.config.latex == 'true'
 
-      - uses: actions/setup-java@v1
+      - uses: actions/setup-java@v3
         if: matrix.config.java == 'true'
         with:
           java-version: 8
