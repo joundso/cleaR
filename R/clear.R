@@ -36,6 +36,15 @@ clear <- function(keep_environment = FALSE,
     ## Cleanup the backend in RStudio:
     ## Clears the console (imitates CTR + L)
     cat("\014")
+    if (tolower(.Platform$GUI[1]) == "rgui") {
+      cat(
+        paste0(
+          "\nThere is no elegant way to clear the console in the Rgui.",
+          " Alternatively moving the window a few lines up now.\n"
+        )
+      )
+      cat(rep("\n", 50))
+    }
   }
   if (!keep_environment) {
     # Clears the Global Environment/variables/data:

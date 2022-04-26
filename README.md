@@ -14,13 +14,13 @@ After calling `cleaR::clear()`, all assigned variables, functions and the printe
 
 ## Installation
 
-<!-- You can install `cleaR` directly from CRAN:
+You can install `cleaR` directly from CRAN:
 
 ```r
 install.packages("cleaR")
-``` -->
+```
 
-The development version can be installed using
+The **development version** can be installed using
 
 ```r
 install.packages("remotes")
