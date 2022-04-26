@@ -127,6 +127,7 @@ usethis::use_build_ignore("CRAN-SUBMISSION")
 usethis::use_build_ignore(".Rproj")
 usethis::use_build_ignore("reconf.sh")
 usethis::use_build_ignore("cleaR.Rproj")
+usethis::use_build_ignore("renovate.json")
 
 
 ## .gitignore:
