@@ -10,6 +10,7 @@
 * updated readme
 #### Others
 
+* added `cat`ing newlines in Rgui
 * (deps): update actions/setup-java action to v3
 * (deps): add renovate.json
 * disabling cron actions

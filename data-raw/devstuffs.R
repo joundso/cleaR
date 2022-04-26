@@ -26,7 +26,7 @@ my_desc$set_authors(c(
 my_desc$del("Maintainer")
 my_desc$del("LazyData")
 # Set the version
-my_desc$set_version("0.0.1.9001")
+my_desc$set_version("0.0.2")
 # The title of your package
 my_desc$set(Title = "Clean the R Console and Environment")
 # The description of your package

@@ -39,11 +39,11 @@ clear <- function(keep_environment = FALSE,
     if (tolower(.Platform$GUI[1]) == "rgui") {
       cat(
         paste0(
-          "\nThere is no elegant way to clear the console in the Rgui.",
-          " Alternatively moving the window a few lines up now.\n"
+          "\n# There is no elegant way to clear the console in the Rgui.",
+          " # Alternatively moving the window a few lines up now.\n"
         )
       )
-      cat(rep("\n", 50))
+      cat(rep("\n", 100))
     }
   }
   if (!keep_environment) {
