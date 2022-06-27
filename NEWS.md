@@ -1,6 +1,6 @@
 # cleaR NEWS
 
-## Unreleased (2022-04-26)
+## Unreleased (2022-06-27)
 
 #### New Features
 
@@ -10,6 +10,8 @@
 * updated readme
 #### Others
 
+* removed github actions
+* added renovate to buildignore
 * new release
 * added `cat`ing newlines in Rgui
 * (deps): update actions/setup-java action to v3

@@ -23,15 +23,21 @@
 #'   environment will not be deleted/emptied.
 #' @param keep_console (Optional, boolean) If true, the console will not
 #'   be emptied.
+#' @param fast (Optional, boolean) If true, `gctorture(TRUE)` will NOT be
+#'   applied which will speedup the function call. For more information see
+#'   \code{?gctorture}.
 #'
 #' @return Nothing.
 #'
 #' @export
 #'
 clear <- function(keep_environment = FALSE,
-                  keep_console = FALSE) {
+                  keep_console = FALSE,
+                  fast = FALSE) {
   ## Inspiration: \url{https://stackoverflow.com/questions/62901476}
-  gctorture(TRUE)
+  if (!fast) {
+    gctorture(TRUE)
+  }
   if (!keep_console) {
     ## Cleanup the backend in RStudio:
     ## Clears the console (imitates CTR + L)
@@ -52,7 +58,9 @@ clear <- function(keep_environment = FALSE,
        envir = sys.frame(-1))
   }
   ## Garbage collector/Clear unused RAM:
-  invisible(gc())
+  invisible(gc(full = TRUE))
   ## Turn it off (important or it gets very slow):
-  gctorture(FALSE)
+  if(!fast) {
+    gctorture(FALSE)
+  }
 }

@@ -4,7 +4,7 @@
 \alias{clear}
 \title{Clean the console and environment-variables}
 \usage{
-clear(keep_environment = FALSE, keep_console = FALSE)
+clear(keep_environment = FALSE, keep_console = FALSE, fast = FALSE)
 }
 \arguments{
 \item{keep_environment}{(Optional, boolean) If true, the objects from the
@@ -12,6 +12,10 @@ environment will not be deleted/emptied.}
 
 \item{keep_console}{(Optional, boolean) If true, the console will not
 be emptied.}
+
+\item{fast}{(Optional, boolean) If true, `gctorture(TRUE)` will NOT be
+applied which will speedup the function call. For more information see
+\code{?gctorture}.}
 }
 \value{
 Nothing.
