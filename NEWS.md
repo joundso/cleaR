@@ -4,6 +4,7 @@
 
 #### New Features
 
+* added option to skip `gctorture`
 * `clear()` function added as first commit
 #### Docs
 
